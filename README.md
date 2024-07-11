@@ -13,8 +13,8 @@ cd receipt-processor
 go mod download
 
 3. Build and run the application:
-go build -o main .
-./main
+go build -o main 
+go run main.go
 
 The server will start running on `http://localhost:8080`.
 
