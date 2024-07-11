@@ -6,8 +6,8 @@
 ## Local Setup
 
 1. Clone the repository:
-`git clone https://github.com/yourusername/receipt-processor.git`
-`cd receipt-processor`
+`git clone https://github.com/yourusername/receipt-processor-challenge-fetch.git`
+`cd receipt-processor-challenge-fetch`
 
 2. Install dependencies:
 `go mod download`
@@ -23,10 +23,10 @@ The server will start running on `http://localhost:8080`.
 1. Ensure you have Docker installed on your system.
 
 2. Build the Docker image:
-`docker build -t receipt-processor`
+`docker build -t receipt-processor-challenge-fetch`
 
 3. Run the Docker container:
-`docker run -p 8080:8080 receipt-processor`
+`docker run -p 8080:8080 receipt-processor-challenge-fetch`
 
 The application will now be accessible at `http://localhost:8080`.
 
