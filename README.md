@@ -80,7 +80,7 @@ You should receive a response with a status 200 OK and a JSON body containing an
 
 Copy this id for use in the next request
 
-Set up the "Get Points" request:
+3. Set up the "Get Points" request:
 
 Create another new request
 Set the HTTP method to GET
@@ -88,7 +88,7 @@ Enter the URL: http://localhost:8080/receipts/{id}/points
 Replace {id} with the id you received from the previous request
 
 
-Send the "Get Points" request:
+4. Send the "Get Points" request:
 
 Click the "Send" button
 You should receive a response with a status 200 OK and a JSON body containing the points
