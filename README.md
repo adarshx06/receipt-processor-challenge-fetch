@@ -34,7 +34,7 @@ The application will now be accessible at `http://localhost:8080`.
 ## Testing with Postman
 
 Open Postman
-Set up the "Process Receipt" request:
+1. Set up the "Process Receipt" request:
 
 Create a new request
 Set the HTTP method to POST
@@ -45,14 +45,40 @@ Value: application/json
 In the "Body" tab:
 
 Select "raw"
-Choose "JSON" from the dropdown, use the example given in example folder.
+Choose "JSON" from the dropdown, use the example given below:
 
-Send the "Process Receipt" request:
+{
+  "retailer": "Target",
+  "purchaseDate": "2022-01-01",
+  "purchaseTime": "13:01",
+  "items": [
+    {
+      "shortDescription": "Mountain Dew 12PK",
+      "price": "6.49"
+    },{
+      "shortDescription": "Emils Cheese Pizza",
+      "price": "12.25"
+    },{
+      "shortDescription": "Knorr Creamy Chicken",
+      "price": "1.26"
+    },{
+      "shortDescription": "Doritos Nacho Cheese",
+      "price": "3.35"
+    },{
+      "shortDescription": "   Klarbrunn 12-PK 12 FL OZ  ",
+      "price": "12.00"
+    }
+  ],
+  "total": "35.35"
+}
+
+2. Send the "Process Receipt" request:
 
 Click the "Send" button
 You should receive a response with a status 200 OK and a JSON body containing an "id"
-Copy this id for use in the next request
+{ "id": "7fb1377b-b223-49d9-a31a-5a02701dd310" }
 
+Copy this id for use in the next request
 
 Set up the "Get Points" request:
 
@@ -66,5 +92,6 @@ Send the "Get Points" request:
 
 Click the "Send" button
 You should receive a response with a status 200 OK and a JSON body containing the points
+{ "points": 32 }
 
 If any issues please reachout to me. Thank You!
