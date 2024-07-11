@@ -6,15 +6,15 @@
 ## Local Setup
 
 1. Clone the repository:
-git clone https://github.com/yourusername/receipt-processor.git
-cd receipt-processor
+`git clone https://github.com/yourusername/receipt-processor.git`
+`cd receipt-processor`
 
 2. Install dependencies:
-go mod download
+`go mod download`
 
 3. Build and run the application:
-go build -o main 
-go run main.go
+`go build -o main` 
+`go run main.go`
 
 The server will start running on `http://localhost:8080`.
 
@@ -23,10 +23,10 @@ The server will start running on `http://localhost:8080`.
 1. Ensure you have Docker installed on your system.
 
 2. Build the Docker image:
-docker build -t receipt-processor .
+`docker build -t receipt-processor`
 
 3. Run the Docker container:
-docker run -p 8080:8080 receipt-processor
+`docker run -p 8080:8080 receipt-processor`
 
 The application will now be accessible at `http://localhost:8080`.
 
